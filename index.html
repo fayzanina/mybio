@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fayza Bio Link</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: inline-block;
+            width: 90%;
+            max-width: 400px;
+        }
+        img.profile {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .link, .id-ff {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+            border: none;
+            cursor: pointer;
+        }
+        .id-ff {
+            background: #ff9800;
+        }
+        .id-ff:hover {
+            background: #e68900;
+        }
+        .link:hover {
+            background: #0056b3;
+        }
+        .btn-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .icon {
+            width: 28px;
+            height: 28px;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        .btn-text {
+            text-align: center;
+            flex-grow: 1;
+        }
+    </style>
+    <script>
+        function copyID() {
+            const idFF = "11250734672";
+            navigator.clipboard.writeText(idFF).then(() => {
+                alert("ID FF Max berhasil disalin: " + idFF);
+            }).catch(err => {
+                alert("Gagal menyalin ID FF Max");
+            });
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <img class="profile" src="https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/094ff87ed318dfb9457e373c09894053~tplv-tiktokx-cropcenter:100:100.jpeg?dr=14579&refresh_token=dfc13597&x-expires=1741604400&x-signature=aGj8aTdCnZRLKw6D8VoMXExvJtY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=sg1" alt="Profil TikTok">
+    <h2>Fayza Nina</h2>
+    <p>Jangan lupa like yang banyak🥰</p>
+
+    <button class="id-ff" onclick="copyID()">
+        <div class="btn-content">
+            <img class="icon" src="https://play-lh.googleusercontent.com/c0Fi9X9wS67H39JxyWlhv3XNJzt-nsO4fRYBndx_Ts0RtPYt0I3dC0Ypi4CoEbw3DG65=w480-h960-rw" alt="FF Max">
+            <span class="btn-text">Copy ID FF Max: 11250734672</span>
+        </div>
+    </button>
+
+    <a class="link" href="https://www.instagram.com/fayzanina1_" target="_blank">
+        <div class="btn-content">
+            <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            <span class="btn-text">Instagram</span>
+        </div>
+    </a>
+
+    <a class="link" href="https://chat.whatsapp.com/GRUP_MABAR" target="_blank">
+        <div class="btn-content">
+            <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            <span class="btn-text">WA Grup Mabar</span>
+        </div>
+    </a>
+
+    <!-- <a class="link" href="https://saweria.co/donasi" target="_blank">
+        <div class="btn-content">
+            <img class="icon" src="https://saweria.co/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcapy_happy.603c7293.svg&w=640&q=75" alt="Donasi">
+            <span class="btn-text">Donasi</span>
+        </div>
+    </a> -->
+</div>
+
+</body>
+</html>
